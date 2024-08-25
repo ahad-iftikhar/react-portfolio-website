@@ -1,4 +1,4 @@
-import { createContext, Dispatch, SetStateAction, useContext } from "react";
+import { createContext, useContext } from "react";
 import { ProjectType } from "../App";
 
 interface ThemeContextType {
@@ -12,7 +12,15 @@ interface ThemeContextType {
 export const ThemeContext = createContext<ThemeContextType>({
   theme: "dark",
   projects: [
-    { id: 1, name: "", slug: "", image: "", description: "", technologies: [] },
+    {
+      id: 1,
+      name: "",
+      slug: "",
+      image: "",
+      description: [],
+      technologies: [],
+      github: "",
+    },
   ],
   updateProjects() {},
   updateTheme() {},
