@@ -24,8 +24,8 @@ function Project() {
       <div className="w-full h-full flex flex-col items-center justify-center pt-32">
         <div className="p-6 flex flex-col items-center gap-4">
           <img
-            src={`/src/assets/${curentProject?.image}.png`}
-            alt="Project Image"
+            src={`./src/assets/${curentProject?.image}.png`}
+            alt={curentProject?.name}
             className="w-[64rem] h-full rounded-lg border-gray-400 border-2"
           />
           <a
