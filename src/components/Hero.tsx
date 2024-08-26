@@ -9,11 +9,11 @@ function Hero() {
 
   return (
     <div
-      className={`h-[100vh] flex items-center justify-center ${
+      className={`h-[100vh] flex items-center flex-col justify-center ${
         theme === "dark" ? "bg-[#091E05] text-white" : "border-b-2"
       }`}
     >
-      <div className="w-[60%] md:h-[40%] max-w-[70%]">
+      <div className="w-[60%] pt-16 md:pt-32 h-[50%] md:h-[40%] max-w-[70%] ">
         <h5 className="font-medium">Hi, My name is</h5>
         <h3 className="text-7xl font-bold mt-4 text-[#f63d6b]">
           Ahad Iftikhar.
@@ -27,7 +27,9 @@ function Hero() {
             loop
           />
         </h2>
-        <div className="flex justify-center mt-14 mb-12">
+      </div>
+      <div className="pt-24 md:pt-28 ">
+        <div className="flex justify-center md:mt-16 mb-12">
           <a
             href="https://drive.google.com/file/d/18S7IbokoXtEcKLABxh8Mw3nzEVnXgCKh/view?usp=drive_link"
             target="_blank"

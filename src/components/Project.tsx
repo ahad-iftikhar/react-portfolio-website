@@ -37,15 +37,19 @@ function Project() {
           </a>
         </div>
         <ul className="list-disc w-[80%] p-6">
-          {curentProject?.description.map((item) => (
-            <li className="p-2 text-2xl">{item}</li>
+          {curentProject?.description.map((item, index) => (
+            <li key={index} className="p-2 text-2xl">
+              {item}
+            </li>
           ))}
         </ul>
       </div>
       <h3 className="text-3xl px-8 py-4">Technologies used</h3>
-      <ul className="list-disc flex flex-wrap gap-20 md:gap-36 lg:gap-56 w-[80%] mx-auto px-5 ">
-        {curentProject?.technologies.map((item) => (
-          <li className="text-xl">{item}</li>
+      <ul className="list-disc flex flex-wrap gap-10 md:gap-36 lg:gap-56 w-[80%] mx-auto px-5 ">
+        {curentProject?.technologies.map((item, index) => (
+          <li key={index} className="text-xl">
+            {item}
+          </li>
         ))}
       </ul>
     </div>

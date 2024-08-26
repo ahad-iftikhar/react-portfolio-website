@@ -28,7 +28,12 @@ function ProjectsSection({
       <div className="flex flex-col items-center justify-center gap-14">
         <div className="flex flex-wrap justify-center gap-16 pt-6">
           {projects.map((item) => (
-            <ProjectCard name={item.name} slug={item.slug} image={item.image} />
+            <ProjectCard
+              key={item.id}
+              name={item.name}
+              slug={item.slug}
+              image={item.image}
+            />
           ))}
         </div>
         {element}
