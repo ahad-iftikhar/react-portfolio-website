@@ -12,7 +12,7 @@ function ProjectCard({
   return (
     <Link
       to={`/project/${slug}`}
-      className="bg-gray-300 w-96 md:w-80 text-black p-4 rounded-lg flex flex-col shadow-2xl hover:bg-gray-400"
+      className="bg-gray-300 w-72 md:w-80 text-black p-4 rounded-lg flex flex-col shadow-2xl hover:bg-gray-400"
     >
       <img
         className="w-96 rounded-md mb-6 h-full"
