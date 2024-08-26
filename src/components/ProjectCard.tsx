@@ -16,7 +16,7 @@ function ProjectCard({
     >
       <img
         className="w-96 rounded-md mb-6 h-full"
-        src={`./src/assets/${image}.png`}
+        src={`/${image}.png`}
         alt={name}
       />
       <h3 className="text-2xl font-medium">{name}</h3>

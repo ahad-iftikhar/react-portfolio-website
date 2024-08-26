@@ -60,7 +60,7 @@ function About() {
       >
         <div className="border-gray-200 border-t-2 border-l-2 rounded-2xl p-2 ml-4">
           <img
-            src="/src/assets/photo.jpg"
+            src="/photo.jpg"
             alt="Profile photo"
             className="md:w-96 rounded-xl"
           />
