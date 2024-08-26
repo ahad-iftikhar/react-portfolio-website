@@ -50,7 +50,7 @@ function Home() {
             : "bg-white border border-b-2"
         }`}
       >
-        <h2 className="py-20 mx-8 text-6xl font-semibold">
+        <h2 className="py-20 mx-8 text-3xl md:text-6xl font-semibold">
           Technologies I Know
         </h2>
         <LogoCarousel />
