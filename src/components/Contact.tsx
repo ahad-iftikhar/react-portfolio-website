@@ -29,7 +29,7 @@ function Contact() {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      toast.success("Message sent successfully");
     }
   };
 
@@ -43,7 +43,6 @@ function Contact() {
     setEmail("");
     setMessage("");
     onSubmit(e);
-    toast.success("Message sent successfully");
   };
   return (
     <div>
